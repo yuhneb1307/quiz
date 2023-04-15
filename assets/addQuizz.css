@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.2cm;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.edit-quiz:hover .nav {
+    display: block;
+}
+
+#quiz-edit-form {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#quiz-edit-form .form-control-desc {
+    width: 100%;
+}
+
+#quiz-edit-form .form-control-title {
+    width: 50%;
+}
+
+#quiz-edit-form .quiz-desc,
+#quiz-edit-form .quiz-title {
+    margin-right: 50px;
+}
+
+#quiz-edit-form .quiz-desc {
+    margin-top: 20px;
+}
+
+#editor-container {
+    height: 375px;
+}
+
+.question li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.add-answer {
+    margin-top: 10px;
+}
+
+.match-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.match-row div div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.match-row div {
+    width: 100%;
+    display: flex;
+}
+
+.match-row span {
+    margin-left: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.question {
+    margin-right: 50px;
+}
+
+.view-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.multi-row .anwser-text {
+    width: 100%;
+}
+
+.multi-row div {
+    display: flex;
+}
+
+.multi-row span {
+    margin-left: 10px;
+}
+
+.multi-row {
+    display: flex;
+    flex-direction: column;
+}

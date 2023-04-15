@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+
+</head>
+
+<body>
+    <div id="quiz-list">
+        <div class="add-quiz">
+            <a href="/addQuiz.html" class="addQuiz">Add Quiz</a>
+            <div class="teacher-student">
+                <input type="checkbox" id="check-btn" onchange="onChangeCheck(this)">I am a teacher
+            </div>
+        </div>
+        <ul id="list">
+            <li class="quiz-number hidden">
+                <a href="" class="quiz-title">
+                    Quiz 1
+                </a>
+                <button class="edit-quiz hidden">
+                    <i class="ti-more"></i>
+                    <ul class="nav">
+                        <li><a href="">Edit</a></li>
+                        <li><a class="del" href="">Remove</a></li>
+                    </ul>
+                </button>
+            </li>
+    </div>
+</body>
+<script src="/assets/script.js"></script>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/viewQuiz.css">
+</head>
+
+<body>
+    <div id="question" class="hidden">
+        <div class="question-number">
+            Question 1
+            <div class="question-point">
+                1 point
+            </div>
+        </div>
+        <div class="question-main">
+            <div class="question-question">
+                Đây là câu hỏi
+            </div>
+            <div class="question-anwser">
+                <div class="multichoice-view hidden">
+                    <div class="multi-row">
+                        <div class=""><input type="checkbox" class="correct-answer"><span class="anwser-text"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="short-question-view hidden">
+                    <textarea type="question-answer" name="" placeholder="Type out your answer here" rows="5"
+                        class="question" class="form-control-desc" onchange="handleOnChangeInput()"></textarea>
+                </div>
+                <div class="match-matching-question-view hidden">
+                    <div class="match-row">
+                        <div class="">
+                            <div>
+                                <span type="text"></span>
+                                <span type="text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/viewQuiz.js"></script>
+
+</html>

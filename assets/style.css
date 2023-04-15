@@ -1,0 +1,115 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.2cm;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#quiz-list {}
+
+#quiz-list .edit-quiz {}
+
+#quiz-list input {
+    margin-right: 10px;
+}
+
+#quiz-list .add-quiz {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#quiz-list #list .quiz-number {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border: 1px solid #ddd;
+    list-style: none;
+    margin: 16px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#quiz-list a {
+    text-decoration: none;
+}
+
+.addQuiz {
+    color: white;
+    background-color: #000054;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.question {
+    margin-right: 50px;
+}
+
+.addQuiz:hover {
+    opacity: 0.6;
+}
+
+.edit-quiz {
+    margin-right: 10px;
+    cursor: pointer;
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000054;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.nav {
+    display: none;
+}
+
+.edit-quiz:hover .nav {
+    display: block;
+}
+
+#quiz-edit-form {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#quiz-edit-form .form-control-desc {
+    width: 100%;
+}
+
+#quiz-edit-form .form-control-tilt {
+    width: 50%;
+}
+
+#quiz-edit-form .quiz-desc,
+#quiz-edit-form .quiz-tilt {
+    margin-right: 50px;
+}
+
+#quiz-edit-form .quiz-desc {
+    margin-top: 20px;
+}
+
+.teacher-student {
+    margin-right: 50px;
+}
+
+.hidden {
+    display: none;
+}

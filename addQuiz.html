@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/addQuizz.css">
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <form id="add-quiz" onsubmit="">
+        <div id="quiz-edit-form">
+            <form action="">
+                <div class="quiz-title">
+                    <input type="title" name="" placeholder="Quiz Title" id="quiz-title" class="form-control-title"
+                        onchange="handleOnChangeInput()">
+                </div>
+                <div class="quiz-desc">
+                    <textarea type="desc" name="" placeholder="Quiz Description" rows="5" id="quiz-desc"
+                        class="form-control-desc" onchange="handleOnChangeInput()"></textarea>
+                </div>
+
+                <form action="">
+                    <div class="question" id="question">
+                        <div class="hidden view-container">
+                            <select name="" class="question-type">
+                                <option value="multiple">Multiple choice</option>
+                                <option value="short">Short answer</option>
+                                <option value="matching">Matching</option>
+                            </select>
+                            <textarea type="question" name="" placeholder="Question" rows="5" class="question"
+                                class="form-control-desc" onchange="handleOnChangeInput()"></textarea>
+                            <div class="multichoice-view">
+                                <div class="multi-row">
+                                    <div class="hidden"><input type="checkbox" class="correct-answer"><input
+                                            class="anwser-text" /><span>✖</span>
+                                    </div>
+                                </div>
+                                <button type="button" class="add-answer">Add more answer</button>
+                            </div>
+                            <div class="short-question-view hidden">
+                                <textarea type="question-answer" name="" placeholder="Type out your answer here"
+                                    rows="5" class="question" class="form-control-desc"
+                                    onchange="handleOnChangeInput()"></textarea>
+                            </div>
+                            <div class="match-matching-question-view hidden">
+                                <div class="match-row">
+                                    <div class="hidden">
+                                        <div>
+                                            <input type="text" />
+                                            <input type="text" />
+                                        </div>
+                                        <span>✖</span>
+                                    </div>
+                                </div>
+                                <button type="button" class="add-answer">Add more answer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="add-more-question" onclick="addMoreQuestion()">Add more
+                        question</button>
+                </form>
+            </form>
+            <button type="button" onclick="onSave()">Save</button>
+        </div>
+    </form>
+</body>
+<script src="/assets/addQuiz.js"></script>
+
+</html>
